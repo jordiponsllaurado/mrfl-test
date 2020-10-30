@@ -1,0 +1,8 @@
+# path/to/project/root/.eslintignore
+# /node_modules/* in the project root are ignored by default
+.vscode/*
+
+# Ignore build files
+build/*
+
+src/serviceWorker.ts
