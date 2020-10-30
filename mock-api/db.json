@@ -1,0 +1,172 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "Title 1",
+            "description": "consectetur veniamdolor consequatmollit aliqua in magna cupidatatlaborisnostrud ex ut laborisnulla voluptate ex Loremdolor cupidatat in sit consequatullamco"
+        },
+        {
+            "id": 2,
+            "title": "Title 2",
+            "description": "voluptate enim etipsum ad in idexercitation dolor doproident magna eu irureminim veniam sint ullamco doloreproident cupidatatsit consectetur autealiqua",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/city",
+                "altValue": "transition"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Title 3",
+            "description": "anim quiscommodo velit aliquipet adipisicing deserunt inin cillum proidentelit commodo dolor dolor enimfugiat non suntin et quipariatur elit commodo reprehenderit sit",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/people",
+                "altValue": "analyzing"
+            }
+        },
+        {
+            "id": 4,
+            "title": "Title 4",
+            "description": "ut aute aliquaExcepteur magna quis elit idcillumin eiusmod veniam sitminim siteiusmod ipsum tempor sintsuntid eu mollit velit consecteturanim magna nostrud veniam in",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/city",
+                "altValue": "Chicken"
+            }
+        },
+        {
+            "id": 5,
+            "title": "Title 5",
+            "description": "Duis irurepariatur exercitation consequat veniam nisisunt culpa exercitationminim dolor dotempor occaecat Lorem aliquipdolore cillumfugiat in velit dolore aute",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/fashion",
+                "altValue": "Zimbabwe"
+            }
+        },
+        {
+            "id": 6,
+            "title": "Title 6",
+            "description": "idvelit magna tempor culpa etdeserunt esse mollit non quisincididunt quis tempor officiaaute et in laboreDuis enim laborum laboris elitreprehenderit sint amet officia",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/sports",
+                "altValue": "Tactics"
+            }
+        },
+        {
+            "id": 7,
+            "title": "Title 7",
+            "description": "voluptate estnulla consequat aliqua est doullamco enim commodo sint fugiatdolor deserunt aute est doullamco fugiat id Utdoloreconsequat amet Excepteur in",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/technics",
+                "altValue": "black"
+            }
+        },
+        {
+            "id": 8,
+            "title": "Title 8",
+            "description": "consectetur deseruntsed laboris Duis ad laboreesse in consequat ametlabore Ut tempor adipisicingid incididuntlabore exercitation et mollitoccaecat proident Duis fugiat"
+        },
+        {
+            "id": 9,
+            "title": "Title 9",
+            "description": "cupidatat non nullanostrud ad labore laborumametut adipisicing sunt cupidatatquis elit fugiatdolor Excepteur cillumdolore adipisicingdolor magnasitex nisi",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/fashion",
+                "altValue": "HDD"
+            }
+        },
+        {
+            "id": 10,
+            "title": "Title 10",
+            "description": "exercitation irureipsum sunt UtipsumExcepteur veniam occaecat voluptate officiaquis deserunt commodoaliqua voluptate minim utpariatursuntqui seddolore ut voluptate aliqua elit",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/nightlife",
+                "altValue": "Shirt"
+            }
+        },
+        {
+            "id": 11,
+            "title": "Title 12",
+            "description": "reprehenderit laboreeiusmod proidentdolore magna in commodo officiareprehenderit dolore velit estesse sunt dolore dolor consequatsint ut aliquip ut laborum",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/cats",
+                "altValue": "transmit"
+            }
+        },
+        {
+            "id": 12,
+            "title": "Title 12",
+            "description": "dolor sedeiusmod culpa enimveniam dolor sit euest ut autedolor eused quioccaecat do enimea aute mollit ullamcoirure in pariaturmollit quis aliquip dolore sed",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/people",
+                "altValue": "infomediaries"
+            }
+        },
+        {
+            "id": 13,
+            "title": "Title 13",
+            "description": "in dolore exercitation commodo quido et Excepteur consectetur doloreofficia in aliqua ut doloraliqua Ut deserunt commodoad adipisicingsit reprehenderit exercitation elit"
+        },
+        {
+            "id": 14,
+            "title": "Title 14",
+            "description": "officia cupidatat ex aliquipsintaute in minim voluptatenostrud aliquip inmagnaadfugiat eiusmodamet elit pariatur minimsint commodo qui deseruntdeserunt do elit sit Excepteur",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/abstract",
+                "altValue": "transmit"
+            }
+        },
+        {
+            "id": 15,
+            "title": "Title 15",
+            "description": "occaecat veniam deserunt commodovelit cupidatat laborumnostrud laborum esse Ut doloreoccaecatofficia dolor in pariatur estaliquipid magna euaute in laborum sunt",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/city",
+                "altValue": "Checking"
+            }
+        },
+        {
+            "id": 16,
+            "title": "Title 16",
+            "description": "eiusmod eu anim ad proidentex nisi ad consequat irureest quis velitdoloresse ipsumutincididuntcommodo nisi aute sintofficia auteoccaecat euin proident",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/transport",
+                "altValue": "Fresh"
+            }
+        },
+        {
+            "id": 17,
+            "title": "Title 17",
+            "description": "ut sintsunt commododolore etExcepteurmagna pariatur nondolore incididuntaliqua enim magnaesse officia proident nostrudin Utpariatur irure tempor laborum",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/nightlife",
+                "altValue": "Money"
+            }
+        },
+        {
+            "id": 18,
+            "title": "Title 18",
+            "description": "est eiusmod dolor fugiat adametnulla cupidatat dodo velitnostrud aliquiput aliqua ut amet occaecataute officia Excepteurofficia eiusmod utsunt eiusmod",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/technics",
+                "altValue": "Avon"
+            }
+        },
+        {
+            "id": 19,
+            "title": "Title 19",
+            "description": "nulla proident culpa minim consequatlaborum laborislaboris amet exercitation eunostruddolore do magna irurequis commodo labore consectetur occaecatin sint",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/nature",
+                "altValue": "Concrete"
+            }
+        },
+        {
+            "id": 20,
+            "title": "Title 20",
+            "description": "labore adnulla in pariatur dolorcillum qui incididuntaute labore est quis dolorcommodo aliquiplaborum exercitation nisi pariatureiusmod quiipsum aliqua aliquip et ex",
+            "image": {
+                "imageUrl": "http://placeimg.com/640/480/sports",
+                "altValue": "Incredible"
+            }
+        }
+    ]
+}
