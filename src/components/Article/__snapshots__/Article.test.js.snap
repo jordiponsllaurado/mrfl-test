@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Article with an image 1`] = `
+<div>
+  <div
+    class="article"
+  >
+    <div
+      class="article-image"
+    >
+      <img
+        alt="Google"
+        src="https://picsum.photos/200/300"
+      />
+    </div>
+    <div
+      class="article-content"
+    >
+      <div
+        class="article-title"
+      >
+        Article title
+      </div>
+      <div
+        class="article-description"
+      >
+        Article description
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders Article without an image 1`] = `
+<div>
+  <div
+    class="article"
+  >
+    <div
+      class="article-content"
+    >
+      <div
+        class="article-title"
+      >
+        Article title
+      </div>
+      <div
+        class="article-description"
+      >
+        Article description
+      </div>
+    </div>
+  </div>
+</div>
+`;
