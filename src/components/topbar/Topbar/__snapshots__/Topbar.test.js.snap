@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Topbar 1`] = `
+<div>
+  <div
+    class="sc-gsTCUz fyGcTq topbar"
+    color="white"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="burger-menu"
+      >
+        <span
+          class="fa-layers fa-fw fa-2x"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-circle fa-w-16 fa-lg "
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style="color: white;"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-bars fa-w-14 fa-sm "
+            data-icon="bars"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style="color: orange;"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </div>
+      <img
+        alt="Marfeel"
+        class="sc-bdfBwQ fkduWl"
+        src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders Topbar with customizations 1`] = `
+<div>
+  <div
+    class="sc-gsTCUz fyGcTq topbar"
+    color="white"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="burger-menu"
+      >
+        <span
+          class="fa-layers fa-fw fa-2x"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-circle fa-w-16 fa-lg "
+            data-icon="circle"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style="color: white;"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-bars fa-w-14 fa-sm "
+            data-icon="bars"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style="color: orange;"
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </div>
+      <img
+        alt="Marfeel"
+        class="sc-bdfBwQ fkduWl"
+        src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

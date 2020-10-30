@@ -168,5 +168,21 @@
                 "altValue": "Incredible"
             }
         }
-    ]
+    ],
+    "customizations": {
+        "background": {
+            "color": "#7d2759"
+        },
+        "logo": {
+            "size": "40px",
+            "image": "https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
+        },
+        "burgerMenu": {
+            "color": "black"
+        },
+        "sectionMenu": {
+            "color": "orange",
+            "textSize": "22px"
+        }
+    }
 }

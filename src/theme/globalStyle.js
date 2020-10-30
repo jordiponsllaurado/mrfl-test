@@ -53,6 +53,33 @@ const GlobalStyle = createGlobalStyle`
         }
     }
   }
+
+  .topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+
+    .header {
+      display: flex;
+      flex: 1;
+      align-content: center;
+      justify-content: center;
+      padding: 8px;
+    }
+
+    .burger-menu {
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      padding: 8px;
+      z-index: 1;
+    }
+  }
+
+  .topbar + .content {
+    padding-top: 102px;
+  }
 `;
 
 export default GlobalStyle;
