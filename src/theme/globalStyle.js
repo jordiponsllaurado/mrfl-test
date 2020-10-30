@@ -21,6 +21,29 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
+  .spinner{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    .loader {
+      border: 4px solid #ff9b35;
+      border-top: 4px solid #aac33a;
+      border-bottom: 4px solid #aac33a;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
   .article {
     min-height: 100px;
     max-height: 100px;
@@ -53,7 +76,7 @@ const GlobalStyle = createGlobalStyle`
         }
     }
   }
-  
+
   .article:not(:last-child) {
     border-bottom: 1px solid #c3c3c3;
   }
