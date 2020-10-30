@@ -53,6 +53,10 @@ const GlobalStyle = createGlobalStyle`
         }
     }
   }
+  
+  .article:not(:last-child) {
+    border-bottom: 1px solid #c3c3c3;
+  }
 
   .topbar {
     position: fixed;
