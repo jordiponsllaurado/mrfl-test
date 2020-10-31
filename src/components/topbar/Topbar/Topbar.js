@@ -1,20 +1,25 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Header from '../Header';
+import SectionMenu from './SectionMenu';
 
 const TopbarWrapper = styled.div`
   ${({ gradient }) => gradient && `background: ${gradient};`}
   ${({ color }) => color && `background: ${color};`}
 `;
 
-const Topbar = ({ customizations }) => {
+const Topbar = ({ customizations, sections, sectionActive, onChangeSection }) => {
+  const { background, sectionMenu } = customizations;
   return (
-    <TopbarWrapper
-      className="topbar"
-      color={customizations.background.color}
-      gradient={customizations.background.gradient}
-    >
+    <TopbarWrapper className="topbar" color={background.color} gradient={background.gradient}>
       <Header {...customizations} />
+      <SectionMenu
+        sections={sections}
+        sectionActive={sectionActive}
+        onChange={onChangeSection}
+        color={sectionMenu.color}
+        textSize={sectionMenu.textSize}
+      />
     </TopbarWrapper>
   );
 };
@@ -31,8 +36,15 @@ Topbar.propTypes = {
     }),
     burgerMenu: PropTypes.shape({
       color: PropTypes.string
+    }),
+    sectionMenu: PropTypes.shape({
+      color: PropTypes.string,
+      textSize: PropTypes.string
     })
-  })
+  }),
+  sections: PropTypes.arrayOf(PropTypes.string).isRequired,
+  sectionActive: PropTypes.string.isRequired,
+  onChangeSection: PropTypes.func.isRequired
 };
 
 Topbar.defaultProps = {
@@ -46,6 +58,10 @@ Topbar.defaultProps = {
     },
     burgerMenu: {
       color: 'orange'
+    },
+    sectionMenu: {
+      color: '',
+      textSize: '22px'
     }
   }
 };

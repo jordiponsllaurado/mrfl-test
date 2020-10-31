@@ -21,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
   }
 
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+
   .spinner{
     width:100%;
     height:100vh;
@@ -85,7 +90,6 @@ const GlobalStyle = createGlobalStyle`
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100px;
 
     .header {
       display: flex;
@@ -93,19 +97,30 @@ const GlobalStyle = createGlobalStyle`
       align-content: center;
       justify-content: center;
       padding: 8px;
+      height: 50px;
     }
 
     .burger-menu {
       position: absolute;
       top: 8px;
-      left: 16px;
+      left: 0px;
       padding: 8px;
       z-index: 1;
     }
   }
 
-  .topbar + .content {
-    padding-top: 102px;
+  .section-menu {
+    display: flex;
+    gap: 8px;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0 8px;
+  }
+
+  .section-item {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
   }
 `;
 

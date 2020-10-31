@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Topbar 1`] = `
+<div>
+  <div
+    class="section-menu"
+  >
+    <div
+      class="sc-bdfBwQ fifiKF section-item"
+      color=""
+    >
+      facilitate
+    </div>
+    <div
+      class="sc-bdfBwQ fIYHdH section-item active"
+      color=""
+    >
+      administration
+    </div>
+    <div
+      class="sc-bdfBwQ fifiKF section-item"
+      color=""
+    >
+      invoice
+    </div>
+    <div
+      class="sc-bdfBwQ fifiKF section-item"
+      color=""
+    >
+      bandwidth
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders Topbar with customizations 1`] = `
+<div>
+  <div
+    class="section-menu"
+  >
+    <div
+      class="sc-bdfBwQ EUqGI section-item active"
+      color="green"
+    >
+      facilitate
+    </div>
+    <div
+      class="sc-bdfBwQ bSISot section-item"
+      color="green"
+    >
+      administration
+    </div>
+    <div
+      class="sc-bdfBwQ bSISot section-item"
+      color="green"
+    >
+      invoice
+    </div>
+    <div
+      class="sc-bdfBwQ bSISot section-item"
+      color="green"
+    >
+      bandwidth
+    </div>
+  </div>
+</div>
+`;

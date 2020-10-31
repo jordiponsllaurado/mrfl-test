@@ -3,7 +3,7 @@
 exports[`renders Topbar 1`] = `
 <div>
   <div
-    class="sc-gsTCUz fyGcTq topbar"
+    class="sc-dlfnbm eGszKx topbar"
     color="white"
   >
     <div
@@ -55,6 +55,34 @@ exports[`renders Topbar 1`] = `
         src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
       />
     </div>
+    <div
+      class="section-menu"
+    >
+      <div
+        class="sc-gsTCUz bRxRTt section-item"
+        color=""
+      >
+        facilitate
+      </div>
+      <div
+        class="sc-gsTCUz fwxwnb section-item active"
+        color=""
+      >
+        administration
+      </div>
+      <div
+        class="sc-gsTCUz bRxRTt section-item"
+        color=""
+      >
+        invoice
+      </div>
+      <div
+        class="sc-gsTCUz bRxRTt section-item"
+        color=""
+      >
+        bandwidth
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -62,7 +90,7 @@ exports[`renders Topbar 1`] = `
 exports[`renders Topbar with customizations 1`] = `
 <div>
   <div
-    class="sc-gsTCUz fyGcTq topbar"
+    class="sc-dlfnbm eGszKx topbar"
     color="white"
   >
     <div
@@ -113,6 +141,34 @@ exports[`renders Topbar with customizations 1`] = `
         class="sc-bdfBwQ fkduWl"
         src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
       />
+    </div>
+    <div
+      class="section-menu"
+    >
+      <div
+        class="sc-gsTCUz bRxRTt section-item"
+        color=""
+      >
+        facilitate
+      </div>
+      <div
+        class="sc-gsTCUz fwxwnb section-item active"
+        color=""
+      >
+        administration
+      </div>
+      <div
+        class="sc-gsTCUz bRxRTt section-item"
+        color=""
+      >
+        invoice
+      </div>
+      <div
+        class="sc-gsTCUz bRxRTt section-item"
+        color=""
+      >
+        bandwidth
+      </div>
     </div>
   </div>
 </div>
