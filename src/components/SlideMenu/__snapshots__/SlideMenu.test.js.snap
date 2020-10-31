@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders SlideMenu close 1`] = `
+<div>
+  <nav
+    class="sc-bdfBwQ XLdOj slide-menu"
+  >
+    <div
+      class="slide-header"
+    >
+      <img
+        alt="Marfeel"
+        src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
+      />
+    </div>
+    <div
+      class="sections"
+    >
+      <a
+        class="section "
+        href="/"
+      >
+        facilitate
+      </a>
+      <a
+        class="section active"
+        href="/"
+      >
+        administration
+      </a>
+      <a
+        class="section "
+        href="/"
+      >
+        invoice
+      </a>
+      <a
+        class="section "
+        href="/"
+      >
+        bandwidth
+      </a>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`renders SlideMenu open 1`] = `
+<div>
+  <nav
+    class="sc-bdfBwQ XLdOj slide-menu"
+  >
+    <div
+      class="slide-header"
+    >
+      <img
+        alt="Marfeel"
+        src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
+      />
+    </div>
+    <div
+      class="sections"
+    >
+      <a
+        class="section "
+        href="/"
+      >
+        facilitate
+      </a>
+      <a
+        class="section active"
+        href="/"
+      >
+        administration
+      </a>
+      <a
+        class="section "
+        href="/"
+      >
+        invoice
+      </a>
+      <a
+        class="section "
+        href="/"
+      >
+        bandwidth
+      </a>
+    </div>
+  </nav>
+</div>
+`;
