@@ -7,6 +7,8 @@ exports[`renders Header 1`] = `
   >
     <div
       class="burger-menu"
+      role="button"
+      tabindex="0"
     >
       <span
         class="fa-layers fa-fw fa-2x"

@@ -8,14 +8,14 @@ beforeEach(() => {
   onChangeSection.mockClear();
 });
 
-test('renders Topbar', () => {
+test('renders Section Menu', () => {
   const { container } = render(
     <SectionMenu sections={sections} sectionActive="administration" onChange={onChangeSection} />
   );
   expect(container).toMatchSnapshot();
 });
 
-test('renders Topbar with customizations', () => {
+test('renders Section Menu with customizations', () => {
   const { container } = render(
     <SectionMenu
       sections={sections}

@@ -4,6 +4,8 @@ exports[`renders Burger Menu with default values 1`] = `
 <div>
   <div
     class="burger-menu"
+    role="button"
+    tabindex="0"
   >
     <span
       class="fa-layers fa-fw fa-2x"
@@ -49,6 +51,8 @@ exports[`renders Burger Menu with default values 2`] = `
 <div>
   <div
     class="burger-menu"
+    role="button"
+    tabindex="0"
   >
     <span
       class="fa-layers fa-fw fa-2x"

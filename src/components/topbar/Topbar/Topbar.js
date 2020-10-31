@@ -15,21 +15,26 @@ const Topbar = ({
   sectionActive,
   onChangeSection,
   sectionVisible,
-  headerVisible
+  headerVisible,
+  onBurgerClick
 }) => {
   const { background, sectionMenu, burgerMenu } = customizations;
 
   if (!headerVisible) {
     return (
       <div className="topbar">
-        <BurgerMenu background={background.color} burgerMenu={burgerMenu.color} />
+        <BurgerMenu
+          background={background.color}
+          burgerMenu={burgerMenu.color}
+          onBurgerClick={onBurgerClick}
+        />
       </div>
     );
   }
 
   return (
     <TopbarWrapper className="topbar" color={background.color} gradient={background.gradient}>
-      <Header {...customizations} />
+      <Header onBurgerClick={onBurgerClick} {...customizations} />
       {sectionVisible && (
         <SectionMenu
           sections={sections}
@@ -65,7 +70,8 @@ Topbar.propTypes = {
   sectionActive: PropTypes.string.isRequired,
   onChangeSection: PropTypes.func.isRequired,
   sectionVisible: PropTypes.bool,
-  headerVisible: PropTypes.bool
+  headerVisible: PropTypes.bool,
+  onBurgerClick: PropTypes.func
 };
 
 Topbar.defaultProps = {
@@ -86,6 +92,7 @@ Topbar.defaultProps = {
     }
   },
   sectionVisible: true,
-  headerVisible: true
+  headerVisible: true,
+  onBurgerClick: null
 };
 export default Topbar;

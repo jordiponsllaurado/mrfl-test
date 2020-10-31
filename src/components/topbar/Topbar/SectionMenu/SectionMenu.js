@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const SectionWrapper = styled.div`
+const SectionWrapper = styled.a`
   ${({ color }) => color && `color: ${color};`}
   ${({ textSize }) => textSize && `font-size: ${textSize};`}
   ${({ active, underlineColor }) => active && `border-bottom: 3px solid ${underlineColor}`}

@@ -11,6 +11,8 @@ exports[`renders Topbar 1`] = `
     >
       <div
         class="burger-menu"
+        role="button"
+        tabindex="0"
       >
         <span
           class="fa-layers fa-fw fa-2x"
@@ -58,30 +60,30 @@ exports[`renders Topbar 1`] = `
     <div
       class="section-menu"
     >
-      <div
+      <a
         class="sc-gsTCUz bRxRTt section-item"
         color=""
       >
         facilitate
-      </div>
-      <div
+      </a>
+      <a
         class="sc-gsTCUz fwxwnb section-item active"
         color=""
       >
         administration
-      </div>
-      <div
+      </a>
+      <a
         class="sc-gsTCUz bRxRTt section-item"
         color=""
       >
         invoice
-      </div>
-      <div
+      </a>
+      <a
         class="sc-gsTCUz bRxRTt section-item"
         color=""
       >
         bandwidth
-      </div>
+      </a>
     </div>
   </div>
 </div>
@@ -98,6 +100,8 @@ exports[`renders Topbar with customizations 1`] = `
     >
       <div
         class="burger-menu"
+        role="button"
+        tabindex="0"
       >
         <span
           class="fa-layers fa-fw fa-2x"
@@ -145,30 +149,30 @@ exports[`renders Topbar with customizations 1`] = `
     <div
       class="section-menu"
     >
-      <div
+      <a
         class="sc-gsTCUz bRxRTt section-item"
         color=""
       >
         facilitate
-      </div>
-      <div
+      </a>
+      <a
         class="sc-gsTCUz fwxwnb section-item active"
         color=""
       >
         administration
-      </div>
-      <div
+      </a>
+      <a
         class="sc-gsTCUz bRxRTt section-item"
         color=""
       >
         invoice
-      </div>
-      <div
+      </a>
+      <a
         class="sc-gsTCUz bRxRTt section-item"
         color=""
       >
         bandwidth
-      </div>
+      </a>
     </div>
   </div>
 </div>

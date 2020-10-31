@@ -6,10 +6,14 @@ const LogoWrapper = styled.img`
   height: ${prop => prop.size};
 `;
 
-const Header = ({ logo, background, burgerMenu }) => {
+const Header = ({ logo, background, burgerMenu, onBurgerClick }) => {
   return (
     <div className="header">
-      <BurgerMenu background={background.color} burgerColor={burgerMenu.color} />
+      <BurgerMenu
+        background={background.color}
+        burgerColor={burgerMenu.color}
+        onBurgerClick={onBurgerClick}
+      />
       <LogoWrapper src={logo.image} alt="Marfeel" size={logo.size} />
     </div>
   );
@@ -25,7 +29,8 @@ Header.propTypes = {
   }),
   burgerMenu: PropTypes.shape({
     color: PropTypes.string
-  })
+  }),
+  onBurgerClick: PropTypes.func
 };
 
 Header.defaultProps = {
@@ -38,7 +43,8 @@ Header.defaultProps = {
   },
   burgerMenu: {
     color: 'orange'
-  }
+  },
+  onBurgerClick: null
 };
 
 export default Header;

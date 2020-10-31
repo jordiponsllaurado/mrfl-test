@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { throttle } from 'lodash';
 import Article from './components/Article';
-import Spinner from './components/Spinner/Spinner';
+import Spinner from './components/Spinner';
+import SlideMenu from './components/SlideMenu';
 import Topbar from './components/topbar/Topbar';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   const [sectionActive, setSectionActive] = useState(null);
   const [sectionVisible, setSectionVisible] = useState(true);
   const [headerVisible, setHeaderVisible] = useState(true);
+  const [menuVisible, setMenuVisible] = useState(false);
 
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/articles`)
@@ -52,6 +54,10 @@ function App() {
     setSectionActive(section);
   };
 
+  const handleBurgerClick = () => {
+    setMenuVisible(!menuVisible);
+  };
+
   const handleScroll = () => {
     const position = window.scrollY;
     setSectionVisible(position < 400);
@@ -70,19 +76,29 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <Topbar
-        customizations={customizations}
+    <>
+      <div className="App">
+        <Topbar
+          customizations={customizations}
+          sections={sections}
+          sectionActive={sectionActive}
+          onChangeSection={handleChangeSection}
+          onBurgerClick={handleBurgerClick}
+          sectionVisible={sectionVisible}
+          headerVisible={headerVisible}
+        />
+
+        <div className="content">
+          {articles && articles.map(article => <Article key={article.id} {...article} />)}
+        </div>
+      </div>
+      <SlideMenu
+        isOpen={menuVisible}
         sections={sections}
         sectionActive={sectionActive}
-        onChangeSection={handleChangeSection}
-        sectionVisible={sectionVisible}
-        headerVisible={headerVisible}
+        onClickOutside={handleBurgerClick}
       />
-      <div className="content">
-        {articles && articles.map(article => <Article key={article.id} {...article} />)}
-      </div>
-    </div>
+    </>
   );
 }
 
