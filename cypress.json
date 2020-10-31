@@ -1,0 +1,6 @@
+{
+    "video": false,
+    "baseUrl": "http://localhost:3030/",
+    "experimentalNetworkStubbing": true,
+    "chromeWebSecurity": false
+}

@@ -1,0 +1,16 @@
+{
+    "background": {
+        "color": "black"
+    },
+    "logo": {
+        "size": "40px",
+        "image": "https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
+    },
+    "burgerMenu": {
+        "color": "white"
+    },
+    "sectionMenu": {
+        "color": "white",
+        "textSize": "22px"
+    }
+}

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import BurgerMenu from '../../BurgerMenu';
 import Header from '../Header';
 import SectionMenu from './SectionMenu';
 
@@ -8,18 +9,36 @@ const TopbarWrapper = styled.div`
   ${({ color }) => color && `background: ${color};`}
 `;
 
-const Topbar = ({ customizations, sections, sectionActive, onChangeSection }) => {
-  const { background, sectionMenu } = customizations;
+const Topbar = ({
+  customizations,
+  sections,
+  sectionActive,
+  onChangeSection,
+  sectionVisible,
+  headerVisible
+}) => {
+  const { background, sectionMenu, burgerMenu } = customizations;
+
+  if (!headerVisible) {
+    return (
+      <div className="topbar">
+        <BurgerMenu background={background.color} burgerMenu={burgerMenu.color} />
+      </div>
+    );
+  }
+
   return (
     <TopbarWrapper className="topbar" color={background.color} gradient={background.gradient}>
       <Header {...customizations} />
-      <SectionMenu
-        sections={sections}
-        sectionActive={sectionActive}
-        onChange={onChangeSection}
-        color={sectionMenu.color}
-        textSize={sectionMenu.textSize}
-      />
+      {sectionVisible && (
+        <SectionMenu
+          sections={sections}
+          sectionActive={sectionActive}
+          onChange={onChangeSection}
+          color={sectionMenu.color}
+          textSize={sectionMenu.textSize}
+        />
+      )}
     </TopbarWrapper>
   );
 };
@@ -44,7 +63,9 @@ Topbar.propTypes = {
   }),
   sections: PropTypes.arrayOf(PropTypes.string).isRequired,
   sectionActive: PropTypes.string.isRequired,
-  onChangeSection: PropTypes.func.isRequired
+  onChangeSection: PropTypes.func.isRequired,
+  sectionVisible: PropTypes.bool,
+  headerVisible: PropTypes.bool
 };
 
 Topbar.defaultProps = {
@@ -63,6 +84,8 @@ Topbar.defaultProps = {
       color: '',
       textSize: '22px'
     }
-  }
+  },
+  sectionVisible: true,
+  headerVisible: true
 };
 export default Topbar;

@@ -97,7 +97,6 @@ const GlobalStyle = createGlobalStyle`
       align-content: center;
       justify-content: center;
       padding: 8px;
-      height: 50px;
     }
 
     .burger-menu {

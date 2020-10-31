@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { throttle } from 'lodash';
 import Article from './components/Article';
 import Spinner from './components/Spinner/Spinner';
 import Topbar from './components/topbar/Topbar';
@@ -19,6 +20,8 @@ function App() {
   });
   const [sections, setSections] = useState(null);
   const [sectionActive, setSectionActive] = useState(null);
+  const [sectionVisible, setSectionVisible] = useState(true);
+  const [headerVisible, setHeaderVisible] = useState(true);
 
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/articles`)
@@ -49,6 +52,19 @@ function App() {
     setSectionActive(section);
   };
 
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setSectionVisible(position < 400);
+    setHeaderVisible(position < 800);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', throttle(handleScroll, 200));
+    return () => {
+      window.removeEventListener('scroll', throttle(handleScroll, 200));
+    };
+  }, []);
+
   if (!articles || !sections) {
     return <Spinner />;
   }
@@ -60,6 +76,8 @@ function App() {
         sections={sections}
         sectionActive={sectionActive}
         onChangeSection={handleChangeSection}
+        sectionVisible={sectionVisible}
+        headerVisible={headerVisible}
       />
       <div className="content">
         {articles && articles.map(article => <Article key={article.id} {...article} />)}
