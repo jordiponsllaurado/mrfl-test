@@ -181,8 +181,20 @@
             "color": "black"
         },
         "sectionMenu": {
-            "color": "orange",
+            "color": "white",
             "textSize": "22px"
         }
-    }
+    },
+    "sections": [
+        "facilitate",
+        "administration",
+        "invoice",
+        "bandwidth",
+        "Garden",
+        "Stravenue",
+        "sensor",
+        "Borders",
+        "leading-edge",
+        "quantifying"
+    ]
 }
