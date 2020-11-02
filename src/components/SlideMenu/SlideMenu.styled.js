@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
   position: fixed;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   background-color: white;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
@@ -14,6 +12,7 @@ export const StyledMenu = styled.nav`
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
 
   .slide-header {
     background-color: #4b4b4b;

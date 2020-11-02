@@ -111,9 +111,15 @@ const GlobalStyle = createGlobalStyle`
   .section-menu {
     display: flex;
     gap: 8px;
-    overflow: auto;
+    overflow-x: auto;
     white-space: nowrap;
     padding: 0 8px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .section-menu::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
   }
 
   .section-item {

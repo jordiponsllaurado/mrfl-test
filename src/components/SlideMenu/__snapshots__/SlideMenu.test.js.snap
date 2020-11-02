@@ -3,7 +3,7 @@
 exports[`renders SlideMenu close 1`] = `
 <div>
   <nav
-    class="sc-bdfBwQ XLdOj slide-menu"
+    class="sc-bdfBwQ kwmMNf slide-menu"
   >
     <div
       class="slide-header"
@@ -48,7 +48,7 @@ exports[`renders SlideMenu close 1`] = `
 exports[`renders SlideMenu open 1`] = `
 <div>
   <nav
-    class="sc-bdfBwQ XLdOj slide-menu"
+    class="sc-bdfBwQ kwmMNf slide-menu"
   >
     <div
       class="slide-header"
