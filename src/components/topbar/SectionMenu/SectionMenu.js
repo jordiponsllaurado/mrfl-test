@@ -43,6 +43,6 @@ SectionMenu.propTypes = {
 
 SectionMenu.defaultProps = {
   color: '',
-  textSize: '22px'
+  textSize: '18px'
 };
 export default SectionMenu;

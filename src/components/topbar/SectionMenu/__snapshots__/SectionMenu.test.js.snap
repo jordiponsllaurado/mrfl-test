@@ -6,25 +6,25 @@ exports[`renders Section Menu 1`] = `
     class="section-menu"
   >
     <a
-      class="sc-bdfBwQ fifiKF section-item"
+      class="sc-bdfBwQ dBSomw section-item"
       color=""
     >
       facilitate
     </a>
     <a
-      class="sc-bdfBwQ fIYHdH section-item active"
+      class="sc-bdfBwQ eHIKPq section-item active"
       color=""
     >
       administration
     </a>
     <a
-      class="sc-bdfBwQ fifiKF section-item"
+      class="sc-bdfBwQ dBSomw section-item"
       color=""
     >
       invoice
     </a>
     <a
-      class="sc-bdfBwQ fifiKF section-item"
+      class="sc-bdfBwQ dBSomw section-item"
       color=""
     >
       bandwidth

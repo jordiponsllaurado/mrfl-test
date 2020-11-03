@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import BurgerMenu from '../../BurgerMenu';
 import Header from '../Header';
-import SectionMenu from './SectionMenu';
+import SectionMenu from '../SectionMenu';
 
 const TopbarWrapper = styled.div`
   ${({ gradient }) => gradient && `background: ${gradient};`}
