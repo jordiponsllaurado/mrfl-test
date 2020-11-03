@@ -29,7 +29,4 @@ beforeEach(() => {
   cy.server();
   cy.route2('http://localhost:3010/sections', { fixture: 'sections.json' }).as('sectionsRequest');
   cy.route2('http://localhost:3010/articles', { fixture: 'articles.json' }).as('articlesRequest');
-  cy.route2('http://localhost:3010/customizations', { fixture: 'customizations.json' }).as(
-    'customizationsRequest'
-  );
 });

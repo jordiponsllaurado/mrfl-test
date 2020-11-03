@@ -34,6 +34,7 @@ exports[`renders Header 1`] = `
           class="svg-inline--fa fa-bars fa-w-14 fa-sm "
           data-icon="bars"
           data-prefix="fas"
+          data-qa="burger-menu-icon"
           focusable="false"
           role="img"
           style="color: orange;"
@@ -50,6 +51,7 @@ exports[`renders Header 1`] = `
     <img
       alt="Marfeel"
       class="sc-bdfBwQ fkduWl"
+      data-qa="logo"
       src="https://www.marfeel.com/public/images/landing/header/logo-marfeel.svg"
     />
   </div>

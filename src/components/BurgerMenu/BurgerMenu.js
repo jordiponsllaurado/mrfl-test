@@ -17,7 +17,12 @@ const BurgerMenu = ({ background, burgerColor, onBurgerClick }) => {
     >
       <span className="fa-layers fa-fw fa-2x">
         <FontAwesomeIcon icon={faCircle} style={{ color: background }} size="lg" />
-        <FontAwesomeIcon icon={faBars} style={{ color: burgerColor }} size="sm" />
+        <FontAwesomeIcon
+          icon={faBars}
+          style={{ color: burgerColor }}
+          size="sm"
+          data-qa="burger-menu-icon"
+        />
       </span>
     </div>
   );

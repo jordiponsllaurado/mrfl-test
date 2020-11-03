@@ -14,7 +14,7 @@ const Header = ({ logo, background, burgerMenu, onBurgerClick }) => {
         burgerColor={burgerMenu.color}
         onBurgerClick={onBurgerClick}
       />
-      <LogoWrapper src={logo.image} alt="Marfeel" size={logo.size} />
+      <LogoWrapper src={logo.image} alt="Marfeel" size={logo.size} data-qa="logo" />
     </div>
   );
 };

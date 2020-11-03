@@ -19,7 +19,7 @@ function App() {
       color: 'orange'
     },
     sectionMenu: {
-      textSize: '22px'
+      textSize: '18px'
     }
   });
   const [sections, setSections] = useState(null);
