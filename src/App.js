@@ -17,6 +17,9 @@ function App() {
     },
     burgerMenu: {
       color: 'orange'
+    },
+    sectionMenu: {
+      textSize: '22px'
     }
   });
   const [sections, setSections] = useState(null);
@@ -37,7 +40,7 @@ function App() {
     fetch(`${process.env.REACT_APP_API_URL}/customizations`)
       .then(response => response.json())
       .then(data => {
-        setCustomizations(data);
+        setCustomizations({ ...customizations, ...data });
       });
   }, []);
 
