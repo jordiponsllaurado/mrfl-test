@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { throttle } from 'lodash';
 import Article from './components/Article';
 import Spinner from './components/Spinner';
+import Error from './components/Error';
 import SlideMenu from './components/SlideMenu';
 import Topbar from './components/topbar/Topbar';
 
@@ -22,17 +23,24 @@ function App() {
       textSize: '18px'
     }
   });
-  const [sections, setSections] = useState(null);
+  const [sections, setSections] = useState([]);
   const [sectionActive, setSectionActive] = useState(null);
   const [sectionVisible, setSectionVisible] = useState(true);
   const [headerVisible, setHeaderVisible] = useState(true);
   const [menuVisible, setMenuVisible] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     fetch(`${process.env.REACT_APP_API_URL}/articles`)
       .then(response => response.json())
       .then(data => {
         setArticles(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        setLoading(false);
+        setError(err);
       });
   }, []);
 
@@ -74,7 +82,7 @@ function App() {
     };
   }, []);
 
-  if (!articles || !sections) {
+  if (loading) {
     return <Spinner />;
   }
 
@@ -93,6 +101,7 @@ function App() {
 
         <div className="content">
           {articles && articles.map(article => <Article key={article.id} {...article} />)}
+          {error && <Error />}
         </div>
       </div>
       <SlideMenu
